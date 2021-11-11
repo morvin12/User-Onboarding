@@ -7,7 +7,27 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
+html{
+  font-size: 62.5%;
+}
+body{
+  font-size:1.6rem;
+  background-color:#6f7475;
+  line-height:1.5;
+  color:#1b1b1b;
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  monospace;
+  text-align: center;
+}
+header {
+  background-color: #46b4b4;
+  color: #222423;
+  font-size: 5rem;
+  font-weight: bold;
+  margin: 2% 0;
+}
+button:disabled, button:disabled:hover {
+  background-color: #4895ef;
+  color: #1659a7;
+  box-shadow: none;
 }

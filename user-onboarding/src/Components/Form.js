@@ -1,4 +1,18 @@
 import React from 'react';
+import styled from 'styled-components';
+
+const H1 = styled.h1`
+display: flex;
+align-items: center;
+justify-content: center;
+position: relative;
+text-transform: uppercase;
+text-shadow: -15px 5px 20px;
+font-size: 3rem;
+margin-bottom: 10%;
+`
+
+
 
 const Form = (props) => {
     const { change, submit, errors } = props;
@@ -17,7 +31,7 @@ const Form = (props) => {
 
     return (
         <div>
-            <h1>User Onboarding Form</h1>
+            <H1>User Onboarding Form</H1>
             <p>{errors.username}</p>
             <p>{errors.password}</p>
             <p>{errors.email}</p>
